@@ -9,7 +9,7 @@ banner = f"""
 |    ___||  |.---.-..----..-----. |    ___|.--.--..-----.|  |.-----..----..-----.
 |    ___||  ||  _  ||   _||  -__| |    ___||_   _||  _  ||  ||  _  ||   _||  -__|
 |___|    |__||___._||__|  |_____| |_______||__.__||   __||__||_____||__|  |_____| 
-                                                |__|  {Fore.RESET}
+                                                  |__|  {Fore.RESET}
 v 1.0 
 Find Real IP Behind CloudFlare
 Dont forget to set censys api_id and api_secret in config.json                    

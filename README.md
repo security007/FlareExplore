@@ -8,6 +8,13 @@ Flare Explore is a Python program designed to find the real IP address behind Cl
 ![Static Badge](https://img.shields.io/badge/Tested%20On-Windows%2010%2C%2011%20%26%20Kali%20Linux-blue?style=for-the-badge)
 </div>
 
+**Fixing Error Whois Module**
+    ```bash
+    pip uninstall whois
+    pip unistall python whois
+    pip install -r requirements.txt
+    ```
+
 **Installation and Usage**
 
 1. Clone the repository:

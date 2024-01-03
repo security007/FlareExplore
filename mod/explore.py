@@ -42,7 +42,7 @@ class Flare:
         except KeyboardInterrupt:
             sys.exit()
         except Exception as e:
-            answer = "None"
+            answer = "None",e
         return answer
     
     def bsoup(self,content):

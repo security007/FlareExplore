@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Flare Explore</h1>
- <img src="https://raw.githubusercontent.com/security007/FlareExplore/master/img3.png" style="width:40vw"> 
+ <img src="https://raw.githubusercontent.com/security007/FlareExplore/master/img/img3.png" style="width:40vw"> 
 
 Flare Explore is a Python program designed to find the real IP address behind Cloudflare protection. It utilizes the Censys API to gather information and reveal the actual IP address of a specified domain.
 <br>
@@ -14,15 +14,19 @@ Flare Explore is a Python program designed to find the real IP address behind Cl
     ```bash
     git clone https://github.com/security007/FlareExplore
     ```
+2. Install requirements module:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. Change to the FlareExplore directory:
+3. Change to the FlareExplore directory:
     ```bash
     cd FlareExplore
     ```
 
-3. Run the program with the desired domain:
+4. Run the program with the desired domain:
     ```bash
-    python explore.py -d domain.com
+    python fileexplore.py -d domain.com
     ```
 
 **Contribution**

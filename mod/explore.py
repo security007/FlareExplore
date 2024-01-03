@@ -2,12 +2,10 @@ from censys.search import CensysHosts
 from difflib import SequenceMatcher
 from bs4 import BeautifulSoup as bs
 from colorama import Fore,init
-import argparse
 import socket
 import whois
 import requests
 import sys
-import json
 import censys
 init()
 
@@ -131,24 +129,5 @@ class Flare:
             else:
                 print(f"🌐 {test_ip} size: {candidate_content_length:.2f} kb | content similarity: {similar_content}% | title similarity: {similar_title}% ")
 
-if __name__ == "__main__":
-    banner = f"""
- {Fore.BLUE}_______  __                       _______                __                    
-|    ___||  |.---.-..----..-----. |    ___|.--.--..-----.|  |.-----..----..-----.
-|    ___||  ||  _  ||   _||  -__| |    ___||_   _||  _  ||  ||  _  ||   _||  -__|
-|___|    |__||___._||__|  |_____| |_______||__.__||   __||__||_____||__|  |_____| 
-                                                  |__|  {Fore.RESET}
-    v 1.0 
-    Find Real IP Behind CloudFlare
-    Dont forget to set censys api_id and api_secret in config.json                    
-"""
-    print(banner)
-    parser = argparse.ArgumentParser()
-    required = parser.add_argument_group('required arguments')
-    required.add_argument('-d', '--domain', help="Domain to check , example.com, without http(s)://",required=True) 
-    args = parser.parse_args()
-    with open("config.json","r") as config:
-        read_config = json.load(config)
-    app = Flare(read_config['api_id'],read_config['api_secret'],args.domain)
-    app.main()
+
     

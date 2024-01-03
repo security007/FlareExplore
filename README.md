@@ -10,11 +10,11 @@ Flare Explore is a Python program designed to find the real IP address behind Cl
 
 **Fixing Error Whois Module**
 
-    ```bash
-    pip uninstall whois
-    pip unistall python whois
-    pip install -r requirements.txt
-    ```
+```bash
+pip uninstall whois
+pip unistall python whois
+pip install -r requirements.txt
+```
 
 **Installation and Usage**
 
